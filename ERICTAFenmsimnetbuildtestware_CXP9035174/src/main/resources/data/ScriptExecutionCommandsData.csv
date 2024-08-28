@@ -1,0 +1,2 @@
+command,expectedExitCode
+/netsim/Core_Build/ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/triggerBuild.sh ,0

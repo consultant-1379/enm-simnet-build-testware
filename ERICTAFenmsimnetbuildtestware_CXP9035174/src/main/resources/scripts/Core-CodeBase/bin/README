@@ -1,0 +1,687 @@
+########################################################################################################################
+# Product Name         : SimNet ENM CORE/TRANSPORT
+# Product Number       : CXP 903 5174
+# Sprint Drop          : 22.03
+# Script Base Revision : CXP 903 5174-1-56
+# Repository           : https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.ci.simnet/enm-simnet-build-testware
+########################################################################################################################
+# US/SNIPs/CRs/TRs/SNADs/SNAGs/ROLLBACK/EW
+# US = User Story
+# SNIP = SimNet Improvement Programme
+# CR = Change Request
+# SJ = SimNet Jira ticket
+# TR = Trouble Report for OSS-RC/ENM etc.
+# SNAD = SubNet Adapter
+# SNAG = Issue found by test
+# ROLLBACK = Issue requiring network functionailty rollback
+# EW = Emergency Workaround for an known issue
+#-----------------------------------------------------------------
+#CORE 22.07
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-57 - 23/03/2022 -zaruksn
+# SJ - NSS-39199
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#-----------------------------------------------------------------
+#CORE 22.03
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-56 - 31/12/2021 -zsivtar
+# SJ - NSS-38242
+#
+# Scripts Modified:
+#     Core-CodeBase/scripts/Core-CodeBase/CONTROLLER/controllerFeatures.sh
+#
+#-----------------------------------------------------------------
+#-----------------------------------------------------------------
+#CORE 22.02
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-55 - 20/12/2021 -zsarkav
+# SJ - NSS-37673
+#
+# Scripts Modified:
+#     Core-CodeBase/scripts/Core-CodeBase/Sgsn/sgsnFeatures.sh
+#
+#-----------------------------------------------------------------
+#CORE 22.02
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-55 - 25/11/2021 -zaruksn
+# SJ - NSS-38007
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#CORE 22.01
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-54 - 25/11/2021 -zsarkav
+# SJ - NSS-37685
+# SJ - NSS-37673
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#CORE 22.01
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-53 - 16/11/2021 -zsarkav
+# SJ - NSS-37693
+# SJ - NSS-37687
+# SJ - NSS-37700
+# SJ - NSS-37702
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#CORE 21.18
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-52 - 01/11/2021 -zaruksn
+# SJ - NSS-37437
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#CORE 21.18
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-51 - 27/10/2021 -zaruksn
+# SJ - NSS-37437
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#     Core-CodeBase/bin/AssignProductData.sh
+#
+#-----------------------------------------------------------------
+#CORE 21.18
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-50 - 27/10/2021 -zaruksn
+# SJ - NSS-37434
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#     Core-CodeBase/bin/AssignProductData.sh
+#
+#-----------------------------------------------------------------
+#CORE 21.18
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-49 - 26/10/2021 -zaruksn
+# SJ - NSS-37435
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#     Core-CodeBase/bin/AssignProductData.sh
+#
+#-----------------------------------------------------------------
+#CORE 21.17
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-48 - 18/10/2021 -zjaisai
+# SJ - NSS-37095
+#
+# Scripts Modified:
+#     Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+#CORE 21.16
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-47 - 27/09/2021 - zyamkan
+# SJ - NSS-37086
+#
+# Scripts Modified:
+#      Core-CodeBase/
+#
+#-----------------------------------------------------------------
+# SJ - CXP 903 5174-1-46 - 21/09/2021 - zyamkan
+# SJ - NSS-37086
+#
+# Scripts Modified:
+#      Core-CodeBase/bin/ProductData.env
+#
+#-----------------------------------------------------------------
+####CORE 21.15
+##----------------------------------------------------------------
+####### SJ - CXP 903 5174-1-45 - 07/09/2021 -zhainic
+####### SJ - NSS-36044
+#######
+####### Scripts Modified:
+### Core-CodeBase/bin/showIps.sh
+##
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+####CORE 21.15
+##----------------------------------------------------------------
+####### SJ - CXP 903 5174-1-44 - 31/08/2021 -zhainic
+####### SJ - NSS-35571,35574,35575,36996
+#######
+####### Scripts Added:
+### Core-CodeBase/CONTROLLER/controllerFeatures.sh
+### Core-CodeBase/bin/ProductData.env
+##
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+####CORE 21.14
+##----------------------------------------------------------------
+####### SJ - CXP 903 5174-1-43 - 20/08/2021 -zjaisai
+####### SJ - NSS-36247
+#######
+####### Scripts Added:
+### Core-CodeBase/SCU/scuFeatures.sh
+### Core-CodeBase/bin/ProductData.env
+##
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+###CORE 21.13
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-42 - 27/07/2021 -zkusanu
+###### SJ - NSS-36131,NSS-36132,NSS-35504
+######
+###### Scripts Added:
+##       Core-CodeBase/YANG/vCUCP_100K.sh
+##       Core-CodeBase/YANG/vCUCP_60K.sh
+##       Core-CodeBase/YANG/vCUUP_30K.sh
+##       Core-CodeBase/YANG/vCUUP_20K.sh
+##       Core-CodeBase/YANG/PCC_100K.sh   
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.13
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-41 - 20/07/2021 -zhainic
+###### SJ - NSS- 34683
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.13
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-40 - 15/07/2021 -zsarkav
+###### SJ - NSS- 32372
+######
+###### Scripts Modified:
+#        Core-CodeBase/MiniLink/set_ALDlinks.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.13
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-40 - 16/07/2021 -zhainic
+###### SJ - NSS-35718
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.13
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-39 - 14/07/2021 -zsarkav
+###### SJ - NSS- 36418
+######
+###### Scripts Modified:
+#        Core-CodeBase/Router6675/Router6675Features.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.12
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-38 - 06/07/2021 -zsujmad
+###### SJ - NSS- 36024,NSS-36025
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#        Core-CodeBase/MRF/mrfFeatures.sh
+#        Core-CodeBase/BGF/bgfFeatures.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.12
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-37 - 23/06/2021 -zsarkav
+###### SJ - NSS- 36049
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+
+#----------------------------------------------------------------
+###CORE 21.11
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-36 - 17/06/2021 -zhainic
+###### SJ - NSS- 35718
+######
+###### Scripts Modified:
+#        Core-CodeBase/SCU/scuFeatures.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.11
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-35 - 07/06/2021 -zsujmad
+###### SJ - NSS- 36023
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.11
+#----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-34 - 01/06/2021 -zsarkav
+###### SJ - NSS- 34492
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.08
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-34 - 30/06/2021 -zsarkav
+###### SJ - NSS- 34363
+######
+###### Scripts Modified
+#         Core-CodeBase/bin/loadFeatures.sh
+##### Scripts added
+#         Core-CodeBase/MiniLink/applyRLTandLLDP.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.08
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-33 - 16/04/2021 -zsujmad
+###### SJ - NSS- 34718
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/loadFeatures.sh
+###### Scripts Added:
+#        Core-CodeBase/CONTROLLER/checkMOs_unitTest.sh
+###### Scripts Removed:
+#        Core-CodeBase/CONTROLLER/checkUnitTemperatureMO.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.08
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-32 - 09/04/2021 -zsujmad
+###### SJ - NSS- 34718
+######
+###### Scripts Modified:
+#        Core-CodeBase/CONTROLLER/controllerFeatures.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.07
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-31 - 15/03/2021 -zhainic
+###### SJ - NSS- 34492
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.07
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-30 - 11/03/2021 -zhainic
+###### SJ - NSS- 34493
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.07
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-29 -09/03/2021 -zhainic
+###### SJ - NSS-34489,34490,34491
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/ProductData.env
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.06
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-28 -05/03/2021 -zsujmad
+###### SJ - NSS-34383
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/loadFeatures.sh
+###### Scripts Added:
+##       Core-CodeBase/CONTROLLER/checkUnitTemperatureMO.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.06
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-27 -01/03/2021 -zsujmad
+###### SJ - NSS-28509
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/AssignProductData.sh
+#        Core-CodeBase/bin/ProductData.env
+#        Core-CodeBase/bin/coreAutomation-1.0.12.jar
+#        Core-CodeBase/bin/loadFeatures.sh
+#        Core-CodeBase/bin/startBuild.sh
+#        Core-CodeBase/SCU/scuFeatures.sh
+#        Core-CodeBase/coreAutomation/src/com/ericsson/simnet/core_automation_1.0.12/
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.06
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-26 -24/02/2021 -zsujmad
+###### SJ - NSS-34037
+######
+###### Scripts Modified:
+#        Core-CodeBase/Sgsn/sgsnFeatures.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.06
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-25 -17/02/2021 -zsujmad
+###### SJ - NSS-34032,NSS-34034,NSS-34500,NSS-34037,NSS-34383
+######
+###### Scripts Modified:
+#        Core-CodeBase/CONTROLLER/controllerFeatures.sh
+#        Core-CodeBase/bin/ProductData.env
+#        Core-CodeBase/Sgsn/sgsnFeatures.sh
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.05
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-24 -08/02/2021 -zhainic
+###### SJ - NSS-34173
+######
+###### Scripts Modified:
+#        Core-CodeBase/bin/AssignProductData.sh
+#        Core-CodeBase/bin/ProductData.env
+#        Core-CodeBase/bin/coreAutomation-1.0.11.jar
+#        Core-CodeBase/bin/loadFeatures.sh
+#        Core-CodeBase/bin/startBuild.sh
+#        Core-CodeBase/coreAutomation/src/com/ericsson/simnet/core_automation_1.0.11/
+#
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.05
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-23 -04/02/2021 -zsujmad
+###### SJ - NSS-33943
+######
+###### Scripts Modified:
+#        Core-CodeBase/CONTROLLER/controllerFeatures.sh
+#        Core-CodeBase/CONTROLLER/bulkup.sh
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.04
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-22 -12/01/2021 -zsujmad
+###### SJ - NSS-32589
+######
+###### Scripts Modified:
+#        Core-CodeBase/CONTROLLER/controllerFeatures.sh
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.04
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-21 -05/01/2021 -zsujmad
+###### SJ - NSS-32589
+######
+###### Scripts Modified:
+#        Core-CodeBase/CONTROLLER/controllerFeatures.sh
+#        Core-CodeBase/bin/AssignProductData.sh
+#        Core-CodeBase/bin/ProductData.env
+#        Core-CodeBase/bin/coreAutomation-1.0.10.jar
+#        Core-CodeBase/dat/NameSpaceData.env
+#        Core-CodeBase/bin/loadFeatures.sh
+#        Core-CodeBase/bin/startBuild.sh
+#        Core-CodeBase/coreAutomation/src/com/ericsson/simnet/core_automation_1.0.10/
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 21.01
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-20 -05/11/2020 -zhainic
+###### SJ - NSS-32122
+###### SJ - NSS-32122
+######
+###### Scripts Modified:
+#        Core-CodeBase/BGF/updateCiphers.sh
+#        Core-CodeBase/BSC/updateCiphers.sh
+#        Core-CodeBase/BSP/updateCiphers.sh
+#        Core-CodeBase/CSCF/updateCiphers.sh
+#        Core-CodeBase/DSC/updateCiphers.sh
+#        Core-CodeBase/EME/updateCiphers.sh
+#        Core-CodeBase/EPG/updateCiphers.sh
+#        Core-CodeBase/ESAPC/updateCiphers.sh
+#        Core-CodeBase/HSS/updateCiphers.sh
+#        Core-CodeBase/IPWORKS/updateCiphers.sh
+#        Core-CodeBase/MRF/updateCiphers.sh
+#        Core-CodeBase/MTAS/updateCiphers.sh
+#        Core-CodeBase/Router6672/updateCiphers.sh
+#        Core-CodeBase/Router6675/updateCiphers.sh
+#        Core-CodeBase/SBG/updateCiphers.sh
+#        Core-CodeBase/Sgsn/sgsnFeatures.sh
+#        Core-CodeBase/SpitFire/updateCiphers.sh
+#        Core-CodeBase/TCU/updateCiphers.sh
+#        Core-CodeBase/WMG/updateCiphers.sh
+#        Core-CodeBase/bin/loadFeatures.sh
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+###CORE 20.15
+###----------------------------------------------------------------
+###----------------------------------------------------------------
+###### SJ - CXP 903 5174-1-19 -01/09/2020 -zhainic
+###### SJ - NSS-30953
+######
+###### Scripts Modified:
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/loadFeatures.sh
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/MiniLink/set_ALDlinks.sh      
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+##CORE 20.13
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+##### SJ - CXP 903 5174-1-18 -06/08/2020 -zhainic
+##### SJ - NSS-31707
+#####
+##### Scripts Modified:
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/FronthAul6020/FronthAul6020Features.sh
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+##CORE 20.12
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+##### SJ - CXP 903 5174-1-17 -03/07/2020 -zsujmad
+##### SJ - NSS-30821
+#####
+##### Scripts Modified:
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/startBuild.sh
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/Router6675/normalisation.sh
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/AssignProductData.sh
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/ProductData.env
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/loadFeatures.sh
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/coreAutomation-1.0.9.jar
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+##CORE 20.11
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+##### SJ - CXP 903 5174-1-16 -25/06/2020 -zhainic
+##### SJ - NSS-30953
+#####
+##### Scripts Modified:
+#         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/scripts/Core-CodeBase/bin/startBuild.sh
+#----------------------------------------------------------------
+##---------------------------------------------------------------
+###CORE 20.09
+###---------------------------------------------------------------
+###---------------------------------------------------------------
+###### SJ -CXP 903 5174-1-15 -15/05/2020 -zsujmad
+###### SJ -NSS-30396
+######
+###### Scripts Added:
+##         bin/triggerBuild.sh
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/java/com/ericsson/oss/ci/simnet/test/cases/CLIScriptExecutionTest.java
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/java/com/ericsson/oss/ci/simnet/test/cases/TestCaseException.java
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/data/ScriptExecutionCommandsData.csv
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/log4j.properties
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/suites/CLIScriptExecutionTestSuite.xml
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/taf_profiles/CORE/datadriven.properties
+##         ERICTAFenmsimnetbuildtestware_CXP9035174/src/main/resources/taf_properties/datadriven.properties
+##         ERICTAFenmsimnetbuildtestware_operators/pom.xml
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/java/com/ericsson/oss/ci/simnet/test/operators/CLIScriptExecutionOperator.java
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/java/com/ericsson/oss/ci/simnet/test/operators/ScriptExecutionOperator.java
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/java/com/ericsson/oss/ci/simnet/test/utils/HostHandler.java
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/java/com/ericsson/oss/ci/simnet/test/utils/TafFileUtils.java
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/java/com/ericsson/oss/ci/simnet/test/utils/ZipUtility.java
+##         ERICTAFenmsimnetbuildtestware_operators/src/main/resources/log4j.properties
+##         pom.xml
+###---------------------------------------------------------------
+###### SJ -CXP 903 5174-1-14 -05/05/2020 -zyamkan
+###### SJ -NSS-30441
+######
+###### Scripts Modified:
+##         bin/loadFeatures.sh
+##         bin/dat/NameSpaceData.env
+##         bin/AssignProductData.sh
+##         bin/ProductData.env
+###### Scripts Added:
+##         bin/NSDS/NSDSFeatures.sh
+##----------------------------------------------------------------
+##CORE 20.07
+##---------------------------------------------------------------
+##---------------------------------------------------------------
+##### SJ -CXP 903 5174-1-13 -02/04/2020 -xharidu
+##### SJ -NSS-29541
+#####
+##### Scripts Modified:
+#         bin/loadFeatures.sh
+##### Scripts Added:
+#         MiniLink/set_ALDlinks.sh
+#----------------------------------------------------------------
+##CORE 20.05
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+##### SJ - CXP 903 5174-1-12 -13/02/2020 -zyamkan
+##### SJ - NSS-29142
+#####
+##### Scripts Modified:
+#         bin/PmCheck.pl
+#----------------------------------------------------------------
+#CORE 20.03
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+#### SJ - CXP 903 5174-1-11 -10/01/2020 -zchianu
+#### SJ - NSS-26914
+####
+#### Scripts Modified:
+####      bin/set_ManagedElementId.sh
+####      bin/startBuild.sh
+####      bin/PmCheck.pl
+####      bin/dat/NameSpaceData.env
+####      bin/coreAutomation-1.0.7.jar
+####      bin/WriteSimData.sh
+####----------------------------------------------------------------
+### SJ - CXP 903 5174-1-10 -30/12/2019 -zyamkan
+### SJ - NSS-28508
+###
+### Scripts Modified:
+###      bin/ProductData.env
+###----------------------------------------------------------------
+##---------------------------------------------------------------
+#### SJ -CXP 903 5174-1-9 -zhainic
+#### SJ - NSS-28610
+#### Scripts Modified
+####      bin/loadFeatures.sh
+####      FronthAul6020/FronthAul6020Features.sh
+##----------------------------------------------------------------
+#### SJ - CXP 903 5174-1-8 -26/12/2019 - zyamkan
+#### SJ - NSS-28410
+#### Scripts Modified
+####     bin/ProductData.env
+####--------------------------------------------------------------
+#----------------------------------------------------------------
+CORE 20.02
+#----------------------------------------------------------------
+### SJ - CXP 903 5174-1-7 -13/12/2019 - zhainic
+### SJ - NSS-28443
+### Scripts Modified
+###     bin/ProductData.env
+###--------------------------------------------------------------
+#----------------------------------------------------------------
+### SJ - CXP 903 5174-1-6 -06/12/2019 -zyamkan
+### SJ - NSS-27895
+###
+### Scripts Modified:
+###      bin/loadFeatures.sh
+###      ESAPC/vSAPCFeatures.sh
+###      bin/ProductData.env
+###      bin/WriteSimData.sh
+###----------------------------------------------------------------
+#----------------------------------------------------------------
+### SJ - CXP 903 5174-1-5 -06/12/19 -zyamkan
+### SJ - NSS-27897
+###
+### Scripts Modified:
+###      bin/ProductData.env
+###----------------------------------------------------------------
+#----------------------------------------------------------------
+## SJ - CXP 903 5174-1-4 -05/12/2019 -zyamkan
+## SJ - NSS-27887
+##
+## Scripts Modified:
+##      bin/ProductData.env
+##----------------------------------------------------------------
+#----------------------------------------------------------------
+# SJ - CXP 903 5174-1-3 -05/12/2019 -zhainic
+# SJ - NSS-27891,27892,27889
+#
+# Scripts Modified:
+#      bin/ProductData.env
+#      bin/AssignProductData.sh
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+5G <version>
+#----------------------------------------------------------------
+# SJ - CXP 903 5174-1-2 06-11-2019 zyamkan
+# SJ - NSS-27634
+#
+# Scripts Modified:
+#      Core-CodeBase/TCU/TCUFeatures.sh
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+#example
+#----------------------------------------------------------------
+5G 19.12
+#----------------------------------------------------------------
+# SJ - CXP 903 5174-1-1 -25/07/2019 -zchianu
+# SJ - NSS-24847
+#
+# Scripts Modified:
+#      dat/ProductData.env
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+
